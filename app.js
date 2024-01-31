@@ -3,7 +3,7 @@ let contadorInten= 0;
 let contadorJueg= 1;
 let listaJuego = [];
 let maxNumber = 10;
-let maxPlays = 1;
+let maxPlays = 10;
 
 //llama a la funcion para la primera asignacion del numero
 //condiciones de inicio
