@@ -3,11 +3,21 @@ let contadorInten= 0;
 let contadorJueg= 1;
 let listaJuego = [];
 let maxNumber = 10;
-let maxPlays = 10;
+maxPlays = 10;
 
 //llama a la funcion para la primera asignacion del numero
 //condiciones de inicio
 startmess();
+
+document.getElementById("numberusr").addEventListener("keydown", function(event) {
+     if (event.key === "Enter") {
+        if (document.getElementById('intento').disabled) {
+          restart();
+        } else {
+          
+        } verificacionIntenyo();
+     }
+ });
 
 function asignarTextoElemento(elemento, texto){
      //selecciona un elemento del HTML (<h1> en este caso </h1>)
@@ -53,7 +63,6 @@ function randomNumberge() {
 
 function clearBox () {
      document.querySelector('#numberusr').value = '';
-
 }
 function win(){
      asignarTextoElemento('h1','GANASTE!!')
